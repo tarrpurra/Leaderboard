@@ -69,10 +69,10 @@ export default function MainPage() {
     try {
       // Call the add points API
       const res = await axios.post(
-        `http://localhost:5000/leaderboard/claim/${userId}`
+        `https://leaderboard-q3iw.onrender.com/leaderboard/claim/${userId}`
       );
 
-      const updated = await axios.get("http://localhost:5000/leaderboard");
+      const updated = await axios.get("https://leaderboard-q3iw.onrender.com/leaderboard");
       setLeaderboardData(updated.data);
       setClaimResult((prev) => ({
         ...prev,
