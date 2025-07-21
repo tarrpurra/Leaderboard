@@ -19,7 +19,7 @@ export default function Profile() {
     setResult(null);
 
     try {
-      const res = await axios.post("http://localhost:5000/profile/user", {
+      const res = await axios.post("https://leaderboard-q3iw.onrender.com/profile/user", {
         UserName: userName,
         points: Number(points),
       });

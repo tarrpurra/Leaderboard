@@ -9,7 +9,7 @@ export default function History() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/history/claim-history") //Fetching the Api to add the history log
+      .get("https://leaderboard-q3iw.onrender.com/history/claim-history") //Fetching the Api to add the history log
       .then((res) => {
         console.log(res)
         setLogs(res.data);

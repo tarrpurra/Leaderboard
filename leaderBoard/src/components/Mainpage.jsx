@@ -25,7 +25,7 @@ export default function MainPage() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:5000/leaderboard")
+      .get("https://leaderboard-q3iw.onrender.com/leaderboard")
       .then((res) => {
         setLeaderboardData(res.data);
         setLoading(false);
